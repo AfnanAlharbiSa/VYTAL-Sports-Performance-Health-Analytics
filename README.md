@@ -61,18 +61,25 @@ The generated output is intended to support athlete monitoring and does not prov
 ## 📊 Dashboard
 
 ### Athlete Health Overview
+![Athlete Health Overview](screenshots/athlete-health-overview.jpeg)
 
 ### Detailed Analytics
+![Athlete Health Overview](screenshots/player-details.jpeg)
 
 ### Player Details
+![Athlete Health Overview](screenshots/player-details.jpeg)
 
 ### Smart Medical Interpretation
+![Athlete Health Overview](screenshots/smart-medical-interpretation.jpeg)
 
 ### Comparison Players
+![Athlete Health Overview](screenshots/comparison-players.jpeg)
 
 ### AI Athlete Report Generator – Before
+![Athlete Health Overview](screenshots/ai-athlete-before.jpeg)
 
 ### AI Athlete Report Generator – Generated Report
+![Athlete Health Overview](screenshots/ai-athlete-after.jpeg)
 
 ## 👩‍💻 My Contributions
 
