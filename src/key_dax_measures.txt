@@ -1,0 +1,396 @@
+Key DAX Measures Summary
+
+This file summarizes the main DAX measures used in the VYTAL Athlete Health Monitoring Platform. The complete DAX implementation is stored inside the Power BI (.pbix) file. Only the key analytical measures are documented here to explain the main dashboard logic.
+
+1. Active_Players
+   Purpose:
+   Calculates the total number of monitored athletes displayed in the Athlete Health Overview dashboard.
+
+Used for:
+
+* Active athlete KPI card
+* Overall monitoring summary
+
+2. Avg_HR
+   Purpose:
+   Calculates the average heart rate value for the selected athlete, session, or filtered dataset.
+
+Used for:
+
+* Heart rate KPI cards
+* Player Details dashboard
+* AI Athlete Report Generator
+
+3. Avg_SpO2
+   Purpose:
+   Calculates the average oxygen saturation value for the selected athlete or filtered dataset.
+
+Used for:
+
+* SpO₂ KPI cards
+* Risk classification
+* AI-generated interpretation
+
+4. Avg_Adjusted_Temperature / Avg_Temperature
+   Purpose:
+   Calculates the average body temperature value for the selected athlete or filtered dataset.
+
+Used for:
+
+* Temperature KPI cards
+* Heat stress monitoring
+* Risk classification
+
+5. Final_Health_Status
+   Purpose:
+   Determines the final athlete health status based on physiological readings and classification logic.
+
+Classification Output:
+
+* Green / Normal
+* Orange / Warning
+* Red / Critical
+
+Used for:
+
+* Risk status display
+* Dashboard color indicators
+* Health classification visuals
+
+6. HR_Status
+   Purpose:
+   Classifies heart rate readings according to predefined physiological thresholds.
+
+Used for:
+
+* Heart rate interpretation
+* Risk contribution analysis
+* Smart Medical Interpretation dashboard
+
+7. SpO2_Status
+   Purpose:
+   Classifies oxygen saturation readings according to predefined physiological thresholds.
+
+Used for:
+
+* SpO₂ interpretation
+* Oxygen risk detection
+* Smart Medical Interpretation dashboard
+
+8. Temp_Status
+   Purpose:
+   Classifies body temperature readings according to predefined physiological thresholds.
+
+Used for:
+
+* Temperature interpretation
+* Heat stress detection
+* Smart Medical Interpretation dashboard
+
+9. Risk_Percentage_Dynamic
+   Purpose:
+   Calculates the dynamic risk percentage based on selected athletes, filters, and risk conditions.
+
+Used for:
+
+* Risk percentage KPI card
+* Team risk monitoring
+* Dashboard warning indicators
+
+10. Players_At_Risk
+    Purpose:
+    Counts athletes classified as requiring monitoring or critical attention.
+
+Used for:
+
+* Players at risk KPI
+* Risk overview dashboard
+* Monitoring summary
+
+11. Critical_Players
+    Purpose:
+    Counts athletes classified under the Red / Critical risk category.
+
+Used for:
+
+* Critical players KPI
+* Athlete Health Overview dashboard
+* Risk alert summary
+
+12. Green_Players
+    Purpose:
+    Counts athletes classified under the Green / Normal category.
+
+Used for:
+
+* Risk distribution visuals
+* Status summary indicators
+
+13. Orange_Players
+    Purpose:
+    Counts athletes classified under the Orange / Warning category.
+
+Used for:
+
+* Risk distribution visuals
+* Warning status summary
+
+14. Red_Players
+    Purpose:
+    Counts athletes classified under the Red / Critical category.
+
+Used for:
+
+* Risk distribution visuals
+* Critical status summary
+
+15. Top_Risk_Player
+    Purpose:
+    Identifies the athlete with the highest calculated risk level or risk score.
+
+Used for:
+
+* Highest-risk athlete KPI
+* Athlete Health Overview dashboard
+
+16. Latest_Player_Status
+    Purpose:
+    Displays the most recent health classification status for the selected athlete.
+
+Used for:
+
+* Player Details dashboard
+* Latest monitoring status
+* Dynamic athlete status cards
+
+17. Latest_HR
+    Purpose:
+    Retrieves the latest heart rate reading for the selected athlete.
+
+Used for:
+
+* Player Details dashboard
+* Current physiological metrics
+
+18. Latest_SpO2
+    Purpose:
+    Retrieves the latest oxygen saturation reading for the selected athlete.
+
+Used for:
+
+* Player Details dashboard
+* Current physiological metrics
+
+19. Latest_Temperature
+    Purpose:
+    Retrieves the latest temperature reading for the selected athlete.
+
+Used for:
+
+* Player Details dashboard
+* Current physiological metrics
+
+20. Player_Details_Banner
+    Purpose:
+    Generates the dynamic banner message shown in the Player Details dashboard according to the selected athlete’s current status.
+
+Used for:
+
+* Player Details alert banner
+* Athlete monitoring summary
+
+21. Smart_Medical_Banner
+    Purpose:
+    Generates the dynamic alert message shown in the Smart Medical Interpretation dashboard according to the athlete’s risk level.
+
+Used for:
+
+* Smart Medical Interpretation page
+* Critical / warning / stable condition banner
+
+22. Medical_Recommendation
+    Purpose:
+    Generates the recommendation text based on the athlete’s physiological status and risk classification.
+
+Used for:
+
+* Smart Medical Interpretation dashboard
+* Medical recommendation card
+
+23. Primary_Risk_Driver
+    Purpose:
+    Identifies the physiological indicator contributing most to the athlete’s risk status.
+
+Possible drivers:
+
+* Heart Rate
+* SpO₂
+* Temperature
+
+Used for:
+
+* Risk contribution analysis
+* Smart Medical Interpretation dashboard
+
+24. HR_Impact
+    Purpose:
+    Calculates the relative contribution of heart rate to the athlete’s overall risk condition.
+
+Used for:
+
+* Risk contribution bar chart
+* Health interpretation analysis
+
+25. SpO2_Impact
+    Purpose:
+    Calculates the relative contribution of oxygen saturation to the athlete’s overall risk condition.
+
+Used for:
+
+* Risk contribution bar chart
+* Health interpretation analysis
+
+26. Temp_Impact
+    Purpose:
+    Calculates the relative contribution of body temperature to the athlete’s overall risk condition.
+
+Used for:
+
+* Risk contribution bar chart
+* Health interpretation analysis
+
+27. Risk_Trend_Over_Time
+    Purpose:
+    Calculates the athlete or team risk trend across monitoring readings.
+
+Used for:
+
+* Trend charts
+* Athlete Health Overview
+* Player Details dashboard
+
+28. Compare_Player_A
+    Purpose:
+    Retrieves selected Player A data for comparison analysis.
+
+Used for:
+
+* Comparison Players dashboard
+
+29. Compare_Player_B
+    Purpose:
+    Retrieves selected Player B data for comparison analysis.
+
+Used for:
+
+* Comparison Players dashboard
+
+30. Player_A_Risk_Score
+    Purpose:
+    Calculates Player A’s risk score during comparison.
+
+Used for:
+
+* Player comparison cards
+* Higher-risk player identification
+
+31. Player_B_Risk_Score
+    Purpose:
+    Calculates Player B’s risk score during comparison.
+
+Used for:
+
+* Player comparison cards
+* Higher-risk player identification
+
+32. Higher_Risk_Player
+    Purpose:
+    Determines which selected athlete has the higher physiological risk during comparison.
+
+Used for:
+
+* Comparison Players dashboard
+* Risk alert section
+
+33. Comparison_Insight
+    Purpose:
+    Generates a short analytical comparison insight between Player A and Player B.
+
+Used for:
+
+* Health insight card
+* Comparison Players dashboard
+
+34. Clinical_Insight
+    Purpose:
+    Provides a concise interpretation of the selected athlete’s physiological condition based on calculated health status and metric values.
+
+Used for:
+
+* Smart Medical Interpretation dashboard
+
+35. Row_Color / Row_Background
+    Purpose:
+    Controls conditional formatting for dashboard tables based on athlete risk status.
+
+Used for:
+
+* Athlete monitoring tables
+* Status-based visual formatting
+
+36. HR_Background_Color / SpO2_Background_Color / Temp_Background_Color
+    Purpose:
+    Controls card background colors based on the status of each physiological indicator.
+
+Used for:
+
+* Smart Medical Interpretation cards
+* Condition-based visual formatting
+
+37. Status_Color
+    Purpose:
+    Assigns a color value to each health status category.
+
+Color Logic:
+
+* Green for Normal
+* Orange for Warning
+* Red for Critical
+
+Used for:
+
+* KPI cards
+* Tables
+* Status indicators
+* Conditional formatting
+
+38. Gauge_Value_Fixed
+    Purpose:
+    Controls the value displayed in gauge visuals for physiological risk level or monitoring coverage.
+
+Used for:
+
+* Gauge charts
+* Team risk display
+
+39. Gauge_Min / Gauge_Max / Gauge_Target
+    Purpose:
+    Defines the minimum, maximum, and target values for dashboard gauge visuals.
+
+Used for:
+
+* Risk gauge visuals
+* Monitoring coverage gauges
+
+40. Decision_Engine
+    Purpose:
+    Combines multiple physiological indicators and risk rules to support the final athlete monitoring decision.
+
+Used for:
+
+* Overall risk logic
+* Dashboard status outputs
+* AI-assisted interpretation support
+
+Note:
+The complete implementation of these DAX measures is available inside the Power BI project file. This summary documents the purpose and usage of the main analytical measures used across the dashboard.

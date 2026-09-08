@@ -1,0 +1,28 @@
+Power Query Data Preprocessing Summary
+
+The dataset preprocessing workflow was implemented using Microsoft Power Query within Power BI.
+
+The following preprocessing procedures were applied:
+
+1. Duplicate Removal
+   • Removed duplicated athlete records to improve data consistency.
+
+2. Data Cleaning
+   • Corrected formatting inconsistencies and handled invalid values.
+
+3. Data Type Conversion
+   • Converted physiological variables into appropriate numerical formats.
+
+4. Column Standardization
+   • Standardized column names and formatting for analytical consistency.
+
+5. Missing Value Handling
+   • Reviewed incomplete records and validated physiological measurements.
+
+6. Data Transformation
+   • Structured dataset tables for dashboard integration and analytical processing.
+
+7. Relationship Preparation
+   • Organized tables to support relational data modeling inside Power BI.
+
+These preprocessing steps improved data quality and supported accurate dashboard analytics, classification logic, and AI-assisted interpretation workflows.
